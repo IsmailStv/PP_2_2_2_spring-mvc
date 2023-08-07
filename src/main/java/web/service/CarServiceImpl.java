@@ -1,11 +1,13 @@
 package web.service;
 
+import org.springframework.stereotype.Component;
 import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Component
 public class CarServiceImpl implements CarService {
 
     List<Car> carList = new ArrayList<>();
@@ -24,7 +26,10 @@ public class CarServiceImpl implements CarService {
     public List<Car> getCarList(Integer count) {
         List<Car> newCarlist = new ArrayList<>();
         for (int i = 0; i < count; i++) {
-            newCarlist.add(carList.get(i));
+//            newCarlist.add(carList.get(i));
+            if (i <= 4) {
+                newCarlist.add(carList.get(i));
+            } else break;
         }
         return newCarlist;
     }

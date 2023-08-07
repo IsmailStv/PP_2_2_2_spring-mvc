@@ -13,7 +13,7 @@
         <th>Year</th>
     </tr>
     <tr>
-    <tr th:each="car : ${cars}">
+    <tr th:each="car : ${printCar}">
         <td th:utext="${car.getModel()}"></td>
         <td th:utext="${car.getSeries()}"></td>
         <td th:utext="${car.getYear()}"></td>
