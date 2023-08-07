@@ -16,6 +16,7 @@ public class CarServiceImpl implements CarService {
             carList.add(new Car("Renault", "Megan", 2004));
             carList.add(new Car("Mercedes-Benz", "GLS", 2015));
             carList.add(new Car("BMW", "X6", 2019));
+            carList.add(new Car("ВАЗ", "Калина", 2020));
             carList.add(new Car("Toyota", "Corolla", 2018));
             carList.add(new Car("Kia", "Mohave", 2021));
             carList.add(new Car("Cadillac", "Escalade", 2023));
